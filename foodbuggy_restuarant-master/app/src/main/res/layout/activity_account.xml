@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/relSearch"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary1"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="15dp"
+                android:text="Account"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+            <!--            <Button-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignBaseline="@+id/browse"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginRight="22dp"-->
+            <!--                android:text="Checkout"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:id="@+id/checkout"-->
+            <!--                android:background="@drawable/bt_uisquare"-->
+            <!--                android:textColor="@android:color/white"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:fontFamily="serif" />-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:clipToPadding="false"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="false"
+        app:layout_collapseMode="parallax">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/card_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/photo"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logo11"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="7">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/id22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID Number"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/grey_900"/>
+
+                        <TextView
+                            android:id="@+id/ophone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="phone number"
+                            android:drawableLeft="@drawable/phone"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/transparent"
+                            android:layout_centerVertical="true"
+                            android:textSize="14sp"
+                            android:fontFamily="serif"
+                            android:textStyle="normal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/grey_40"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/card_profile_name"
+                android:background="@color/grey_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/view1"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/account_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account Info"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/search_bar"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account"
+                android:padding="10dp"
+                android:drawableTint="@color/colorPrimary1"
+                android:textColor="@color/colorPrimary1"
+                android:drawablePadding="5dp"
+                android:text="Owner Name"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/oname"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:padding="10dp"
+                android:drawableTint="@color/colorPrimary1"
+                android:textColor="@color/colorPrimary1"
+                android:drawablePadding="5dp"
+                android:text="Owner Phone"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/ophone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mail"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary1"
+                android:textColor="@color/colorPrimary1"
+                android:text="Owner email"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/oemail"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aadhar"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:text="Owner Aadhar"
+                android:drawableTint="@color/colorPrimary1"
+                android:textColor="@color/colorPrimary1"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/oaadhar"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rest"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:text="Owner Aadhar"
+                android:drawableTint="@color/colorPrimary1"
+                android:textColor="@color/colorPrimary1"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/orest"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

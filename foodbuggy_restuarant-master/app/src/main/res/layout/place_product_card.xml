@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imag"
+            android:layout_marginBottom="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-20dp"
+        app:cardCornerRadius="5dp"
+        android:background="@drawable/btrr">
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rs. 25.00"
+        android:gravity="center"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary1"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crispy Chicken Sandwich "
+            android:textColor="@color/overlay_dark_80"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/product_description"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Rs. 25.00"-->
+<!--            android:visibility="gone"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="sans-serif"-->
+<!--            android:textColor="@color/grey_600"/>-->
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 0"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/grey_600"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <!--<include layout="@layout/layout_login"/>-->
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pavan123"/>
+
+        <TextView
+            style="@style/loginHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:fontFamily="sans-serif"
+            android:text="Login"
+            android:textColor="#F44336" />
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/textInputEmail"-->
+        <!--            style="@style/parent"-->
+        <!--            android:layout_marginTop="@dimen/loginViewsMargin">-->
+
+        <EditText
+            android:id="@+id/username1"
+            style="@style/modifiedEditText"
+            android:hint="Enter Phone Number"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="5dp"
+            android:background="@drawable/bt_uiborder"
+            android:padding="8dp"
+            android:textSize="17sp"
+            android:inputType="phone"
+            android:maxLines="1" />
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/textInputPassword"-->
+        <!--            style="@style/parent"-->
+        <!--            android:layout_marginTop="@dimen/loginViewsMargin">-->
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/modifiedEditText"
+            android:hint="Enter Password"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/lock"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="8dp"
+            android:background="@drawable/bt_uiborder"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp" >
+
+            <CheckBox
+                android:id="@+id/prem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="Show Password"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/forget"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="1dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Forget password?" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:background="@drawable/login_button_bk"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:fontFamily="serif"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            style="@style/parent"-->
+<!--            android:id="@+id/signup"-->
+<!--            android:textAlignment="textEnd"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorPrimary1"-->
+<!--            android:text=""-->
+<!--            android:layout_marginTop="@dimen/loginViewsMargin"-->
+<!--            android:gravity="end"-->
+<!--            android:fontFamily="@font/asul_bold" />-->
+        <ProgressBar
+            android:id="@+id/progressBar11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tint="@color/colorPrimary1"
+            android:src="@drawable/fssai"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tint="@color/colorPrimary1"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/msme"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

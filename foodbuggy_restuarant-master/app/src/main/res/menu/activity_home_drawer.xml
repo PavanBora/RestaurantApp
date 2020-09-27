@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_home"
+            android:icon="@drawable/home"
+            android:orderInCategory="100"
+            android:title="Buggy"/>
+
+        <item
+            android:id="@+id/action_orders"
+            android:orderInCategory="100"
+            android:icon="@drawable/orders"
+            android:title="Orders" />
+
+        <item
+            android:id="@+id/action_profile"
+            android:orderInCategory="100"
+            android:icon="@drawable/history"
+            android:title="Order History"
+            />
+        <item
+            android:id="@+id/action_menu"
+            android:icon="@drawable/menu"
+            android:orderInCategory="100"
+            android:title="Menu" />
+        <item
+            android:id="@+id/action_review"
+            android:icon="@drawable/review"
+            android:orderInCategory="100"
+            android:title="Review Orders" />
+        <item
+            android:id="@+id/action_logs"
+            android:icon="@drawable/logs"
+            android:orderInCategory="100"
+            android:title="Logistics" />
+
+        <item
+            android:id="@+id/action_account"
+            android:icon="@drawable/account"
+            android:orderInCategory="100"
+            android:title="Account" />
+    </group>
+
+
+
+</menu>

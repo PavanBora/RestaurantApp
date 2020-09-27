@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/whiteCardColor"-->
+<!--                app:layout_scrollFlags="scroll|enterAlways">-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--            <FrameLayout-->
+<!--                android:id="@+id/fl"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="100dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Restaurant Status: "-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:fontFamily="sans-serif"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:textColor="@color/blackTextColor"/>-->
+<!--                    <Switch-->
+<!--                        android:id="@+id/switch1"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginRight="40dp"-->
+<!--                        android:switchMinWidth="56dp"-->
+<!--                        android:textOff="OFF"-->
+<!--                        android:textOn="ON" />-->
+<!--                </LinearLayout>-->
+<!--            </FrameLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteTextColor">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/tab_layout_background"
+            app:tabMode="scrollable"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabSelectedTextColor="@color/whiteTextColor"
+            app:tabPaddingStart="16dp"
+            app:tabTextColor="@color/colorPrimary1"
+            app:tabPaddingEnd="16dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@null"
+            app:tabTextAppearance="@style/TabTextAppearance"/>
+    </LinearLayout>
+
+<!--        </RelativeLayout>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+</LinearLayout>
